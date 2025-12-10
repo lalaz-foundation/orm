@@ -1,0 +1,61 @@
+++ Update File: packages/orm/src/Relations/BelongsToMany.php
+@@
+ use Lalaz\Orm\Model;
+
+ final class BelongsToMany extends Relation
+ {
+@@
+     /**
+      * @return array<int, Model>
+      */
+     public function getResults(): array
+     {
+@@
+         return $results;
+     }
++
++    /**
++     * @param array<int, Model> $parents
++     * @param string $relation
++     * @return array<string, mixed>
++     */
++    public function eagerLoad(array $parents, string $relation): array
++    {
++        $keys = array_filter(
++            array_map(
++                fn(Model $parent): mixed => $parent->getAttribute(
++                    $this->parentKey,
++                ),
++                $parents,
++            ),
++            static fn($value): bool => $value !== null,
++        );
++
++        if ($keys === []) {
++            return [];
++        }
++
++        $builder = $this->related
++            ->newQuery()
++            ->join(
++                $this->table,
++                $this->table . "." . $this->relatedPivotKey,
++                "=",
++                $this->related->getTable() . "." . $this->relatedKey,
++            )
++            ->whereIn($this->table . "." . $this->foreignPivotKey, $keys);
++
++        $rows = $builder->get();
++
++        $grouped = [];
++        foreach ($rows as $row) {
++            $instance = $this->related->newFromBuilder($row);
++            $pivotKey = $row[$this->foreignPivotKey] ?? null;
++            if ($pivotKey !== null) {
++                $grouped[$pivotKey][] = $instance;
++            }
++        }
++
++        return $grouped;
++    }
+ }

@@ -1,0 +1,16 @@
+{
+    "name": "lalaz/orm",
+    "description": "ActiveRecord-style ORM with migrations, seeders, and model relationships.",
+    "version": "1.0.0",
+    "provider": "Lalaz\\Orm\\OrmServiceProvider",
+    "install": {
+        "config": {
+            "stub": "config/orm.php",
+            "destination": "config/orm.php",
+            "overwrite": false
+        }
+    },
+    "uninstall": {
+        "keep_config": true
+    }
+}
