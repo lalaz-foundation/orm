@@ -10,7 +10,7 @@ use RuntimeException;
  * Thrown when lazy loading is prevented by configuration.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class LazyLoadingViolationException extends RuntimeException
 {

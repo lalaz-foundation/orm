@@ -10,7 +10,7 @@ use RuntimeException;
  * Thrown when an optimistic lock check fails (stale data).
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class OptimisticLockException extends RuntimeException
 {

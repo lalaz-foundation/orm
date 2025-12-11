@@ -10,7 +10,7 @@ use RuntimeException;
  * Thrown when a relation method does not return a Relation instance.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class InvalidRelationException extends RuntimeException
 {

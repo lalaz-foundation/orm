@@ -11,7 +11,7 @@ use Lalaz\Orm\Model;
  * No-op validator used when the validation package is not installed.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class NullModelValidator implements ModelValidatorInterface
 {

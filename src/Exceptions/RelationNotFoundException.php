@@ -10,7 +10,7 @@ use RuntimeException;
  * Thrown when attempting to access an undefined relation.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class RelationNotFoundException extends RuntimeException
 {

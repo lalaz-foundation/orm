@@ -21,7 +21,7 @@ use Lalaz\Orm\Traits\HasTimestamps;
  * Lightweight ActiveRecord-style base model built on the Lalaz query builder.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 abstract class Model
 {

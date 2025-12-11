@@ -10,7 +10,7 @@ use RuntimeException;
  * Generic validation failure wrapper for model persistence.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class ValidationException extends RuntimeException
 {

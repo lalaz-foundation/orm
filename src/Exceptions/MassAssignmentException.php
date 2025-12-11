@@ -10,7 +10,7 @@ use RuntimeException;
  * Thrown when attempting to set an attribute that is not fillable.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class MassAssignmentException extends RuntimeException
 {

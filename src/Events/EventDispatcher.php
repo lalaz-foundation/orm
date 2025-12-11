@@ -8,7 +8,7 @@ namespace Lalaz\Orm\Events;
  * Minimal event dispatcher for model lifecycle hooks.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class EventDispatcher
 {

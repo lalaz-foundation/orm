@@ -8,7 +8,7 @@ namespace Lalaz\Orm\Traits;
  * Attribute storage, casting, visibility, and dirty tracking.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 trait HasAttributes
 {

@@ -12,7 +12,7 @@ use Lalaz\Orm\Model;
  * the ORM at runtime when available.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 interface ModelValidatorInterface
 {

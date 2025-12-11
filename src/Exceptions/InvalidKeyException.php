@@ -10,7 +10,7 @@ use RuntimeException;
  * Thrown when a model key cannot be generated or is invalid.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class InvalidKeyException extends RuntimeException
 {

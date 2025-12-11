@@ -10,7 +10,7 @@ use RuntimeException;
  * Thrown when a model cannot be found for a "find or fail" style call.
  *
  * @package lalaz/orm
- * @author Gregory Serrao <hello@lalaz.dev>
+ * @author Gregory Serrao <hi@lalaz.dev>
  */
 final class ModelNotFoundException extends RuntimeException
 {
